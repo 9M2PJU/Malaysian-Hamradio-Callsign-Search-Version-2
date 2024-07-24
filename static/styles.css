@@ -25,25 +25,27 @@ h1 {
 
 form {
     display: flex;
-    gap: 10px;
+    flex-direction: column; /* Ensure the input and button stack vertically */
+    gap: 10px; /* Add space between input and button */
     margin-bottom: 20px;
 }
 
 input[type="text"] {
-    flex: 1;
-    padding: 10px;
+    padding: 15px; /* Increase padding for a larger input */
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px; /* Larger font size for better readability */
 }
 
 button {
-    padding: 10px 15px;
+    padding: 15px 20px; /* Increase padding for a larger button */
     border: none;
     border-radius: 4px;
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px; /* Larger font size for better readability */
+    width: 100%; /* Ensure button takes full width of the form */
 }
 
 button:hover {
@@ -69,11 +71,6 @@ thead {
 }
 
 @media screen and (max-width: 768px) {
-    /* Make table responsive */
-    .table-container {
-        overflow-x: auto;
-    }
-
     table {
         width: 100%;
         display: block;
@@ -82,8 +79,7 @@ thead {
     }
 
     th, td {
-        display: inline-block;
-        text-align: center;
+        display: table-cell;
         min-width: 120px;
     }
 }
