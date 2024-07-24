@@ -1,6 +1,3 @@
-Certainly! Here’s a GitHub-friendly formatted README file for your project:
-
-```markdown
 # Callsign Lookup Tool
 
 This project provides a web service for looking up Malaysian ham radio callsigns. It includes a Flask-based server and a bash script to fetch and process data from the MCMC website.
